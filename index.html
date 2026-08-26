@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad · Rayly</title>
+<meta name="description" content="Política de privacidad de la app Rayly, de PJ Climate Labs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sol1:#F6CC4C; --sol2:#E8823A;
+    --fondo:#FBF6EC; --tarjeta:#FFFFFF;
+    --texto:#3A2E22; --texto2:#6B5C4A; --texto3:#9A8B77;
+    --borde:#EFE4D2; --acento:#D9781F;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Nunito',system-ui,sans-serif;
+    background:var(--fondo); color:var(--texto);
+    line-height:1.65; font-size:16.5px;
+    padding:0 18px 80px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px; margin:0 auto}
+
+  /* Cabecera */
+  header{
+    text-align:center; padding:48px 0 24px;
+  }
+  .logo{
+    font-family:'Fredoka',sans-serif; font-weight:700;
+    font-size:34px; letter-spacing:.5px;
+    background:linear-gradient(100deg,var(--sol1),var(--sol2));
+    -webkit-background-clip:text; background-clip:text;
+    -webkit-text-fill-color:transparent;
+    display:inline-flex; align-items:center; gap:10px;
+  }
+  .logo svg{width:32px;height:32px;flex:none}
+  h1{
+    font-family:'Fredoka',sans-serif; font-weight:600;
+    font-size:24px; margin-top:14px; color:var(--texto);
+  }
+  .fecha{color:var(--texto3); font-size:14px; margin-top:6px}
+
+  /* Toggle idioma */
+  .lang{
+    display:inline-flex; margin:22px auto 0; padding:4px;
+    background:var(--tarjeta); border:1px solid var(--borde);
+    border-radius:999px; gap:2px;
+  }
+  .lang button{
+    font-family:'Nunito',sans-serif; font-weight:700; font-size:14px;
+    border:0; background:transparent; color:var(--texto2);
+    padding:7px 18px; border-radius:999px; cursor:pointer;
+    transition:.18s;
+  }
+  .lang button.on{
+    background:linear-gradient(100deg,var(--sol1),var(--sol2));
+    color:#fff; box-shadow:0 3px 10px rgba(217,120,31,.25);
+  }
+
+  /* Contenido */
+  main{
+    background:var(--tarjeta); border:1px solid var(--borde);
+    border-radius:22px; padding:34px 30px;
+    margin-top:28px;
+    box-shadow:0 10px 40px rgba(180,120,40,.06);
+  }
+  main p{color:var(--texto2); margin:12px 0}
+  main h2{
+    font-family:'Fredoka',sans-serif; font-weight:600;
+    font-size:19px; color:var(--texto);
+    margin:30px 0 6px; padding-top:8px;
+  }
+  main h3{
+    font-weight:700; font-size:16px; color:var(--acento);
+    margin:18px 0 4px;
+  }
+  main ul{margin:10px 0 10px 4px; padding-left:20px; color:var(--texto2)}
+  main li{margin:6px 0}
+  main a{color:var(--acento); text-decoration:none; font-weight:600; word-break:break-word}
+  main a:hover{text-decoration:underline}
+  strong{color:var(--texto)}
+  .intro{font-size:17px}
+
+  .resumen{
+    margin-top:34px; padding:22px 24px;
+    background:linear-gradient(160deg,#FFF7E6,#FFEFD6);
+    border:1px solid #F4DCA8; border-radius:18px;
+  }
+  .resumen h2{margin-top:0}
+  .resumen p{color:#6b5535}
+
+  footer{
+    text-align:center; color:var(--texto3);
+    font-size:13.5px; margin-top:40px; line-height:1.9;
+  }
+  footer a{color:var(--acento); text-decoration:none; font-weight:600}
+
+  [data-lang]{display:none}
+  body.es [data-lang="es"]{display:block}
+  body.en [data-lang="en"]{display:block}
+  /* inline variantes de idioma (fecha) */
+  span[data-lang]{display:none}
+  body.es span[data-lang="es"]{display:inline}
+  body.en span[data-lang="en"]{display:inline}
+
+  @media(max-width:520px){
+    body{font-size:16px}
+    main{padding:26px 20px; border-radius:18px}
+    .logo{font-size:30px}
+  }
+</style>
+</head>
+<body class="es">
+<div class="wrap">
+
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="url(#g)" stroke-width="1.7" stroke-linecap="round">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="24" y2="24">
+          <stop offset="0" stop-color="#F6CC4C"/><stop offset="1" stop-color="#E8823A"/>
+        </linearGradient></defs>
+        <circle cx="12" cy="12" r="4.2"/>
+        <path d="M12 2.4v2.3M12 19.3v2.3M4.4 12H2.1M21.9 12h-2.3M6.3 6.3 4.7 4.7M19.3 19.3l-1.6-1.6M17.7 6.3l1.6-1.6M4.7 19.3l1.6-1.6"/>
+      </svg>
+      Rayly
+    </div>
+    <h1>
+      <span data-lang="es">Política de Privacidad</span>
+      <span data-lang="en">Privacy Policy</span>
+    </h1>
+    <div class="fecha">
+      <span data-lang="es">Última actualización: 26 de agosto de 2026</span>
+      <span data-lang="en">Last updated: 26 August 2026</span>
+    </div>
+
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button id="btn-es" class="on" onclick="setLang('es')">Español</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+  </header>
+
+  <!-- ==================== ESPAÑOL ==================== -->
+  <main data-lang="es">
+    <p class="intro">En Rayly nos tomamos tu privacidad muy en serio. Esta política explica de forma clara y honesta qué datos maneja la aplicación, para qué se usan, dónde se guardan y con quién se comparten. Queremos que entiendas exactamente cómo funciona Rayly antes de usarla.</p>
+    <p>Rayly es una aplicación de exposición solar que te ayuda a disfrutar del sol de forma responsable, calculando el índice UV de tu ubicación y ofreciéndote estimaciones orientativas según tu tipo de piel.</p>
+
+    <h2>1. Quién es el responsable del tratamiento</h2>
+    <p>El responsable de esta aplicación es <strong>PJ Climate Labs (Pau Joan Navarro López)</strong>, desarrollador de Rayly. Puedes contactar con nosotros en cualquier momento a través del correo:</p>
+    <p><strong>Correo de contacto: <a href="mailto:pjclimatelabs@gmail.com">pjclimatelabs@gmail.com</a></strong></p>
+
+    <h2>2. Qué datos recogemos y para qué</h2>
+    <p>Rayly recoge y utiliza los siguientes datos, siempre con una finalidad concreta:</p>
+    <h3>2.1. Ubicación del dispositivo (GPS)</h3>
+    <p>Usamos tu ubicación geográfica (coordenadas de latitud y longitud) para calcular el índice UV local y mostrarte el nombre de tu ciudad. Sin esta información no podríamos ofrecerte estimaciones ajustadas a tu zona.</p>
+    <p>Puedes usar la app introduciendo una ciudad manualmente en lugar de activar el GPS, si lo prefieres.</p>
+    <h3>2.2. Datos que tú configuras en la app</h3>
+    <p>Para personalizar los cálculos y tu experiencia, Rayly guarda:</p>
+    <ul>
+      <li>Tu fototipo de piel (cómo reacciona tu piel al sol).</li>
+      <li>Si tomas medicación fotosensible. Este es un dato relativo a tu salud y por eso recibe un trato especial, explicado más abajo en el apartado 5.</li>
+      <li>El historial de ciudades que has buscado.</li>
+      <li>Tu progreso de gamificación (logros, rachas y elementos similares dentro de la app).</li>
+    </ul>
+    <h3>2.3. Datos que NO recogemos</h3>
+    <ul>
+      <li>No creamos cuentas de usuario ni te pedimos registro.</li>
+      <li>No recogemos tu nombre, teléfono, correo ni ningún identificador personal directo.</li>
+      <li>No usamos herramientas de analítica ni de publicidad.</li>
+      <li>No rastreamos tu actividad entre aplicaciones ni entre sesiones con fines comerciales.</li>
+    </ul>
+
+    <h2>3. Dónde se guardan tus datos</h2>
+    <p>Todos los datos que configuras o que genera la app (fototipo, medicación fotosensible, historial de ciudades y progreso de gamificación) se guardan <strong>únicamente en tu dispositivo</strong>, mediante el almacenamiento local de la aplicación (localStorage).</p>
+    <p>Esto significa que:</p>
+    <ul>
+      <li>No tenemos un servidor propio donde se almacenen tus datos.</li>
+      <li>No podemos acceder a esa información, ni la vemos, ni la copiamos.</li>
+      <li>Si desinstalas la app o borras sus datos, esa información desaparece de forma definitiva.</li>
+    </ul>
+
+    <h2>4. Con quién se comparten tus datos (terceros)</h2>
+    <p>Rayly no vende ni comparte tus datos con terceros con fines comerciales. La única excepción son dos servicios técnicos necesarios para que la app funcione, a los que se envían tus coordenadas de ubicación:</p>
+    <h3>4.1. Open-Meteo</h3>
+    <p>Enviamos tus coordenadas geográficas a Open-Meteo (api.open-meteo.com) para obtener el índice UV y los datos meteorológicos de tu zona. También usamos su servicio de geocodificación cuando buscas una ciudad por su nombre.</p>
+    <p>Política de privacidad de Open-Meteo: <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">https://open-meteo.com/en/terms</a></p>
+    <h3>4.2. OpenStreetMap / Nominatim</h3>
+    <p>Enviamos tus coordenadas geográficas al servicio de geocodificación Nominatim de OpenStreetMap para traducir esas coordenadas en el nombre de tu ciudad.</p>
+    <p>Política de privacidad de OpenStreetMap: <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">https://wiki.osmfoundation.org/wiki/Privacy_Policy</a></p>
+    <p>En ambos casos se envían solo las coordenadas necesarias para la consulta. No se envía tu fototipo, tu medicación, tu historial ni tu progreso.</p>
+
+    <h2>5. Datos de salud (medicación fotosensible)</h2>
+    <p>El dato sobre si tomas medicación fotosensible se considera un dato personal sensible, ya que está relacionado con tu salud. Por eso queremos ser especialmente claros:</p>
+    <ul>
+      <li>Este dato se guarda solo en tu dispositivo y nunca sale de él.</li>
+      <li>No se envía a Open-Meteo, ni a OpenStreetMap, ni a nosotros, ni a ningún tercero.</li>
+      <li>Se usa únicamente para ajustar las recomendaciones de exposición dentro de la app.</li>
+      <li>Es completamente opcional. Puedes no indicarlo si no lo deseas.</li>
+    </ul>
+
+    <h2>6. Base legal del tratamiento</h2>
+    <p>Cuando la normativa aplicable sea el Reglamento General de Protección de Datos (RGPD) de la Unión Europea, la base legal para tratar estos datos es tu consentimiento, que otorgas al configurar la app y al permitir el acceso a la ubicación. Puedes retirar ese consentimiento en cualquier momento desactivando los permisos o borrando los datos de la app.</p>
+
+    <h2>7. Tus derechos</h2>
+    <p>Como los datos se guardan solo en tu dispositivo, tú tienes el control directo sobre ellos. En el marco del RGPD y de otras normativas de protección de datos, dispones de los siguientes derechos:</p>
+    <ul>
+      <li><strong>Acceso:</strong> puedes consultar en todo momento los datos que has introducido, ya que están visibles dentro de la propia app.</li>
+      <li><strong>Rectificación:</strong> puedes cambiar tu fototipo, tu ciudad o tu configuración cuando quieras desde los ajustes.</li>
+      <li><strong>Supresión (borrado):</strong> puedes eliminar todos tus datos borrando los datos de la aplicación desde los ajustes del dispositivo, o desinstalando Rayly. Al hacerlo, la información desaparece de forma definitiva.</li>
+      <li><strong>Oposición y limitación:</strong> puedes dejar de usar funciones concretas, como la geolocalización, en cualquier momento.</li>
+    </ul>
+    <p>Como no disponemos de tus datos en ningún servidor, no podemos consultarlos ni borrarlos en tu nombre. El control es tuyo y se ejerce desde el propio dispositivo. Si tienes cualquier duda sobre cómo hacerlo, escríbenos a <a href="mailto:pjclimatelabs@gmail.com">pjclimatelabs@gmail.com</a> y te ayudamos.</p>
+
+    <h2>8. Permisos de la aplicación</h2>
+    <p>Rayly puede solicitar el permiso de ubicación de tu dispositivo. Este permiso se usa exclusivamente para las finalidades descritas en esta política. Puedes concederlo o denegarlo, y revocarlo más tarde desde los ajustes del sistema operativo.</p>
+
+    <h2>9. Menores de edad</h2>
+    <p>Rayly no está dirigida específicamente a menores ni recoge de forma consciente datos de menores de edad. Si un menor utiliza la app, recomendamos que lo haga con la supervisión de un adulto responsable.</p>
+
+    <h2>10. Cambios en esta política</h2>
+    <p>Podemos actualizar esta política de privacidad para reflejar mejoras en la app o cambios legales. Cuando lo hagamos, actualizaremos la fecha de "última actualización" que aparece al principio de este documento. Te recomendamos revisarla de vez en cuando.</p>
+
+    <h2>11. Contacto</h2>
+    <p>Si tienes cualquier pregunta sobre esta política o sobre cómo tratamos tus datos, escríbenos a:</p>
+    <p><strong><a href="mailto:pjclimatelabs@gmail.com">pjclimatelabs@gmail.com</a></strong></p>
+
+    <div class="resumen">
+      <h2>En cristiano (resumen rápido)</h2>
+      <p>Rayly usa tu ubicación solo para calcularte el UV y saber tu ciudad, y para eso envía tus coordenadas a Open-Meteo y OpenStreetMap. Todo lo demás (tu tipo de piel, si tomas medicación fotosensible, tus ciudades y tus logros) se queda guardado únicamente en tu móvil: no lo vemos, no lo guardamos en ningún servidor y no lo vendemos a nadie. Si borras los datos de la app o la desinstalas, esa información desaparece del todo. Tú tienes el control.</p>
+    </div>
+  </main>
+
+  <!-- ==================== ENGLISH ==================== -->
+  <main data-lang="en">
+    <p class="intro">At Rayly we take your privacy very seriously. This policy explains, clearly and honestly, what data the app handles, what it is used for, where it is stored and who it is shared with. We want you to understand exactly how Rayly works before you use it.</p>
+    <p>Rayly is a sun-exposure app that helps you enjoy the sun responsibly, calculating the UV index for your location and giving you guideline estimates based on your skin type.</p>
+
+    <h2>1. Who is responsible for processing your data</h2>
+    <p>This app is operated by <strong>PJ Climate Labs (Pau Joan Navarro López)</strong>, the developer of Rayly. You can contact us at any time by email:</p>
+    <p><strong>Contact email: <a href="mailto:pjclimatelabs@gmail.com">pjclimatelabs@gmail.com</a></strong></p>
+
+    <h2>2. What data we collect and why</h2>
+    <p>Rayly collects and uses the following data, always for a specific purpose:</p>
+    <h3>2.1. Device location (GPS)</h3>
+    <p>We use your geographic location (latitude and longitude coordinates) to calculate the local UV index and show you your city name. Without this information we could not offer estimates tailored to your area.</p>
+    <p>If you prefer, you can use the app by entering a city manually instead of turning on GPS.</p>
+    <h3>2.2. Data you set up in the app</h3>
+    <p>To personalise the calculations and your experience, Rayly stores:</p>
+    <ul>
+      <li>Your skin type (how your skin reacts to the sun).</li>
+      <li>Whether you take photosensitising medication. This relates to your health, so it receives special treatment, explained below in section 5.</li>
+      <li>The history of cities you have searched for.</li>
+      <li>Your gamification progress (achievements, streaks and similar items within the app).</li>
+    </ul>
+    <h3>2.3. Data we do NOT collect</h3>
+    <ul>
+      <li>We do not create user accounts or ask you to register.</li>
+      <li>We do not collect your name, phone number, email or any direct personal identifier.</li>
+      <li>We do not use analytics or advertising tools.</li>
+      <li>We do not track your activity across apps or across sessions for commercial purposes.</li>
+    </ul>
+
+    <h2>3. Where your data is stored</h2>
+    <p>All the data you set up or that the app generates (skin type, photosensitising medication, city history and gamification progress) is stored <strong>only on your device</strong>, using the app's local storage (localStorage).</p>
+    <p>This means that:</p>
+    <ul>
+      <li>We do not have our own server where your data is stored.</li>
+      <li>We cannot access that information; we do not see it or copy it.</li>
+      <li>If you uninstall the app or clear its data, that information is gone for good.</li>
+    </ul>
+
+    <h2>4. Who your data is shared with (third parties)</h2>
+    <p>Rayly does not sell or share your data with third parties for commercial purposes. The only exception is two technical services needed for the app to work, to which your location coordinates are sent:</p>
+    <h3>4.1. Open-Meteo</h3>
+    <p>We send your geographic coordinates to Open-Meteo (api.open-meteo.com) to obtain the UV index and weather data for your area. We also use its geocoding service when you search for a city by name.</p>
+    <p>Open-Meteo privacy policy: <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">https://open-meteo.com/en/terms</a></p>
+    <h3>4.2. OpenStreetMap / Nominatim</h3>
+    <p>We send your geographic coordinates to OpenStreetMap's Nominatim geocoding service to turn those coordinates into your city name.</p>
+    <p>OpenStreetMap privacy policy: <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">https://wiki.osmfoundation.org/wiki/Privacy_Policy</a></p>
+    <p>In both cases only the coordinates needed for the query are sent. Your skin type, medication, history and progress are never sent.</p>
+
+    <h2>5. Health data (photosensitising medication)</h2>
+    <p>Whether you take photosensitising medication is considered sensitive personal data, as it relates to your health. That is why we want to be especially clear:</p>
+    <ul>
+      <li>This data is stored only on your device and never leaves it.</li>
+      <li>It is not sent to Open-Meteo, OpenStreetMap, us, or any third party.</li>
+      <li>It is used solely to adjust the exposure recommendations within the app.</li>
+      <li>It is completely optional. You can leave it unset if you wish.</li>
+    </ul>
+
+    <h2>6. Legal basis for processing</h2>
+    <p>Where the applicable law is the European Union's General Data Protection Regulation (GDPR), the legal basis for processing this data is your consent, which you give by setting up the app and allowing access to your location. You can withdraw that consent at any time by disabling permissions or clearing the app's data.</p>
+
+    <h2>7. Your rights</h2>
+    <p>Because your data is stored only on your device, you have direct control over it. Under the GDPR and other data-protection laws, you have the following rights:</p>
+    <ul>
+      <li><strong>Access:</strong> you can review the data you have entered at any time, since it is visible within the app itself.</li>
+      <li><strong>Rectification:</strong> you can change your skin type, city or settings whenever you want from the settings screen.</li>
+      <li><strong>Erasure (deletion):</strong> you can delete all your data by clearing the app's data from your device settings, or by uninstalling Rayly. When you do, the information is permanently gone.</li>
+      <li><strong>Objection and restriction:</strong> you can stop using specific features, such as geolocation, at any time.</li>
+    </ul>
+    <p>Since we do not hold your data on any server, we cannot look it up or delete it on your behalf. Control is yours and is exercised from your own device. If you have any doubts about how to do this, write to us at <a href="mailto:pjclimatelabs@gmail.com">pjclimatelabs@gmail.com</a> and we will help you.</p>
+
+    <h2>8. App permissions</h2>
+    <p>Rayly may request your device's location permission. This permission is used solely for the purposes described in this policy. You can grant or deny it, and revoke it later from your operating system's settings.</p>
+
+    <h2>9. Minors</h2>
+    <p>Rayly is not specifically aimed at minors and does not knowingly collect data from minors. If a minor uses the app, we recommend they do so under the supervision of a responsible adult.</p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>We may update this privacy policy to reflect improvements to the app or legal changes. When we do, we will update the "last updated" date shown at the top of this document. We recommend checking it from time to time.</p>
+
+    <h2>11. Contact</h2>
+    <p>If you have any questions about this policy or how we handle your data, write to us at:</p>
+    <p><strong><a href="mailto:pjclimatelabs@gmail.com">pjclimatelabs@gmail.com</a></strong></p>
+
+    <div class="resumen">
+      <h2>In plain words (quick summary)</h2>
+      <p>Rayly uses your location only to calculate your UV and find your city, and for that it sends your coordinates to Open-Meteo and OpenStreetMap. Everything else (your skin type, whether you take photosensitising medication, your cities and your achievements) stays stored only on your phone: we don't see it, we don't keep it on any server, and we don't sell it to anyone. If you clear the app's data or uninstall it, that information disappears completely. You are in control.</p>
+    </div>
+  </main>
+
+  <footer>
+    <span data-lang="es">Rayly &middot; PJ Climate Labs<br>Contacto: <a href="mailto:pjclimatelabs@gmail.com">pjclimatelabs@gmail.com</a></span>
+    <span data-lang="en">Rayly &middot; PJ Climate Labs<br>Contact: <a href="mailto:pjclimatelabs@gmail.com">pjclimatelabs@gmail.com</a></span>
+  </footer>
+
+</div>
+
+<script>
+  function setLang(l){
+    document.body.className = l;
+    document.documentElement.lang = l;
+    document.getElementById('btn-es').classList.toggle('on', l==='es');
+    document.getElementById('btn-en').classList.toggle('on', l==='en');
+    try{ history.replaceState(null,'', l==='en' ? '?lang=en' : location.pathname); }catch(e){}
+  }
+  // Idioma inicial: ?lang=en, o el del navegador
+  (function(){
+    var q = new URLSearchParams(location.search).get('lang');
+    var nav = (navigator.language||'es').slice(0,2);
+    setLang(q==='en' || (!q && nav==='en') ? 'en' : 'es');
+  })();
+</script>
+</body>
+</html>
