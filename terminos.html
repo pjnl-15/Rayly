@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Términos de Uso · Rayly</title>
+<meta name="description" content="Términos y condiciones de uso de la app Rayly, de PJ Climate Labs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sol1:#F6CC4C; --sol2:#E8823A;
+    --fondo:#FBF6EC; --tarjeta:#FFFFFF;
+    --texto:#3A2E22; --texto2:#6B5C4A; --texto3:#9A8B77;
+    --borde:#EFE4D2; --acento:#D9781F;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Nunito',system-ui,sans-serif;
+    background:var(--fondo); color:var(--texto);
+    line-height:1.65; font-size:16.5px;
+    padding:0 18px 80px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px; margin:0 auto}
+
+  /* Cabecera */
+  header{
+    text-align:center; padding:48px 0 24px;
+  }
+  .logo{
+    font-family:'Fredoka',sans-serif; font-weight:700;
+    font-size:34px; letter-spacing:.5px;
+    background:linear-gradient(100deg,var(--sol1),var(--sol2));
+    -webkit-background-clip:text; background-clip:text;
+    -webkit-text-fill-color:transparent;
+    display:inline-flex; align-items:center; gap:10px;
+  }
+  .logo svg{width:32px;height:32px;flex:none}
+  h1{
+    font-family:'Fredoka',sans-serif; font-weight:600;
+    font-size:24px; margin-top:14px; color:var(--texto);
+  }
+  .fecha{color:var(--texto3); font-size:14px; margin-top:6px}
+
+  /* Toggle idioma */
+  .lang{
+    display:inline-flex; margin:22px auto 0; padding:4px;
+    background:var(--tarjeta); border:1px solid var(--borde);
+    border-radius:999px; gap:2px;
+  }
+  .lang button{
+    font-family:'Nunito',sans-serif; font-weight:700; font-size:14px;
+    border:0; background:transparent; color:var(--texto2);
+    padding:7px 18px; border-radius:999px; cursor:pointer;
+    transition:.18s;
+  }
+  .lang button.on{
+    background:linear-gradient(100deg,var(--sol1),var(--sol2));
+    color:#fff; box-shadow:0 3px 10px rgba(217,120,31,.25);
+  }
+
+  /* Contenido */
+  main{
+    background:var(--tarjeta); border:1px solid var(--borde);
+    border-radius:22px; padding:34px 30px;
+    margin-top:28px;
+    box-shadow:0 10px 40px rgba(180,120,40,.06);
+  }
+  main p{color:var(--texto2); margin:12px 0}
+  main h2{
+    font-family:'Fredoka',sans-serif; font-weight:600;
+    font-size:19px; color:var(--texto);
+    margin:30px 0 6px; padding-top:8px;
+  }
+  main h3{
+    font-weight:700; font-size:16px; color:var(--acento);
+    margin:18px 0 4px;
+  }
+  main ul{margin:10px 0 10px 4px; padding-left:20px; color:var(--texto2)}
+  main li{margin:6px 0}
+  main a{color:var(--acento); text-decoration:none; font-weight:600; word-break:break-word}
+  main a:hover{text-decoration:underline}
+  strong{color:var(--texto)}
+  .intro{font-size:17px}
+
+  .resumen{
+    margin-top:34px; padding:22px 24px;
+    background:linear-gradient(160deg,#FFF7E6,#FFEFD6);
+    border:1px solid #F4DCA8; border-radius:18px;
+  }
+  .resumen h2{margin-top:0}
+  .resumen p{color:#6b5535}
+
+  footer{
+    text-align:center; color:var(--texto3);
+    font-size:13.5px; margin-top:40px; line-height:1.9;
+  }
+  footer a{color:var(--acento); text-decoration:none; font-weight:600}
+
+  [data-lang]{display:none}
+  body.es [data-lang="es"]{display:block}
+  body.en [data-lang="en"]{display:block}
+  /* inline variantes de idioma (fecha) */
+  span[data-lang]{display:none}
+  body.es span[data-lang="es"]{display:inline}
+  body.en span[data-lang="en"]{display:inline}
+
+  @media(max-width:520px){
+    body{font-size:16px}
+    main{padding:26px 20px; border-radius:18px}
+    .logo{font-size:30px}
+  }
+</style>
+</head>
+<body class="es">
+<div class="wrap">
+
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="url(#g)" stroke-width="1.7" stroke-linecap="round">
+        <defs><linearGradient id="g" x1="0" y1="0" x2="24" y2="24">
+          <stop offset="0" stop-color="#F6CC4C"/><stop offset="1" stop-color="#E8823A"/>
+        </linearGradient></defs>
+        <circle cx="12" cy="12" r="4.2"/>
+        <path d="M12 2.4v2.3M12 19.3v2.3M4.4 12H2.1M21.9 12h-2.3M6.3 6.3 4.7 4.7M19.3 19.3l-1.6-1.6M17.7 6.3l1.6-1.6M4.7 19.3l1.6-1.6"/>
+      </svg>
+      Rayly
+    </div>
+    <h1>
+      <span data-lang="es">Términos de Uso</span>
+      <span data-lang="en">Terms of Use</span>
+    </h1>
+    <div class="fecha">
+      <span data-lang="es">Última actualización: 6 de septiembre de 2026</span>
+      <span data-lang="en">Last updated: 6 September 2026</span>
+    </div>
+
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button id="btn-es" class="on" onclick="setLang('es')">Español</button>
+      <button id="btn-en" onclick="setLang('en')">English</button>
+    </div>
+  </header>
+
+  <main>
+
+    <section data-lang="es">
+    <h2>1. Quiénes somos y qué es esto</h2>
+    <p>Rayly es una aplicación desarrollada por PJ Climate Labs. Estos Términos de Uso regulan la relación entre tú y nosotros cuando usas la app. Al descargar o utilizar Rayly, aceptas estos términos. Si no estás de acuerdo con ellos, no uses la aplicación.</p>
+    <p>Contacto: <a href="mailto:pjclimatelabs@gmail.com">pjclimatelabs@gmail.com</a></p>
+
+    <h2>2. Para qué sirve Rayly</h2>
+    <p>Rayly calcula una estimación orientativa del tiempo que puedes estar al sol según el índice UV de tu ubicación, tu tipo de piel (fototipo), el protector solar que uses, el entorno en el que estés y si tomas medicación fotosensible.</p>
+    <p>La app está pensada para personas adultas sanas que quieren tomar el sol de forma más consciente.</p>
+
+    <h2>3. Aviso importante: Rayly no es un producto sanitario</h2>
+    <p>Esto es lo más importante de todo el documento, así que lo decimos claro:</p>
+    <ul>
+      <li>Rayly <strong>no es un dispositivo médico</strong> ni un producto sanitario.</li>
+      <li>Los tiempos que ves son <strong>estimaciones basadas en modelos científicos</strong>, no mediciones de tu piel.</li>
+      <li>Rayly <strong>no diagnostica, no trata ni previene ninguna enfermedad</strong>, incluido el cáncer de piel.</li>
+      <li>La app <strong>no sustituye el consejo de un profesional sanitario</strong>. Si tienes dudas sobre tu piel, lunares, alergias solares o medicación, consulta a tu médico o dermatólogo.</li>
+    </ul>
+    <p>Cada piel es distinta y hay factores que la app no puede conocer (tu estado de salud, tu historial, cómo aplicas el protector, cuánto sudas o cuánto te bañas). <strong>Usa siempre tu propio criterio y protección solar adecuada.</strong></p>
+
+    <h2>4. Tu responsabilidad al usar la app</h2>
+    <p>Al usar Rayly entiendes y aceptas que:</p>
+    <ul>
+      <li>Eres tú quien decide cuánto tiempo permanece al sol. La app solo te informa.</li>
+      <li>Debes introducir tus datos (fototipo, medicación, protección) con sinceridad, porque de ellos depende el cálculo.</li>
+      <li>No respondemos por quemaduras solares, reacciones cutáneas u otros daños derivados de tu exposición al sol.</li>
+      <li>Si tienes una condición médica, tomas medicación fotosensible o tienes antecedentes de cáncer de piel, debes consultar a un profesional antes de guiarte por la app.</li>
+    </ul>
+    <p>Rayly se ofrece "tal cual". No garantizamos que los datos meteorológicos sean exactos ni que la app funcione sin interrupciones.</p>
+
+    <h2>5. Menores de edad</h2>
+    <p>Rayly está dirigida a mayores de 18 años. La piel infantil es más sensible y requiere criterios distintos a los que aplica la app.</p>
+
+    <h2>6. Rayly Plus (suscripción)</h2>
+    <p>Rayly se puede usar gratis. Además, ofrecemos una suscripción opcional llamada <strong>Rayly Plus</strong> que desbloquea funciones adicionales.</p>
+    <ul>
+      <li><strong>Precio:</strong> el que se muestre en la propia app antes de comprar, en tu moneda local.</li>
+      <li><strong>Prueba gratuita:</strong> si se ofrece, su duración se indica antes de suscribirte. Si no cancelas antes de que termine, la suscripción se cobra automáticamente.</li>
+      <li><strong>Renovación automática:</strong> la suscripción se renueva sola al final de cada periodo, salvo que la canceles al menos 24 horas antes.</li>
+      <li><strong>Cómo cancelar:</strong> desde los ajustes de tu cuenta de Google Play o de App Store, no desde la app. Puedes cancelar cuando quieras y seguirás teniendo Plus hasta que acabe el periodo pagado.</li>
+      <li><strong>Pagos y devoluciones:</strong> los gestiona la tienda (Google o Apple), no nosotros. Las devoluciones se rigen por sus políticas.</li>
+    </ul>
+
+    <h2>7. Propiedad intelectual</h2>
+    <p>La app, su nombre, su logotipo, sus diseños y sus textos son propiedad de PJ Climate Labs. Puedes usar la app, pero no copiarla, redistribuirla, descompilarla ni crear productos derivados sin permiso.</p>
+    <p>Las tarjetas que generas para compartir son tuyas: puedes publicarlas libremente en tus redes.</p>
+
+    <h2>8. Datos de terceros</h2>
+    <p>Rayly usa datos de radiación UV y meteorológicos de Open-Meteo, y servicios de localización de OpenStreetMap y Photon (Komoot). No controlamos esos servicios ni respondemos de la exactitud de sus datos.</p>
+
+    <h2>9. Privacidad</h2>
+    <p>Tus datos se guardan en tu dispositivo, no en nuestros servidores. Los detalles están en nuestra <a href="./">Política de Privacidad</a>, que forma parte de estos términos.</p>
+
+    <h2>10. Límite de responsabilidad</h2>
+    <p>En la medida que permita la ley, PJ Climate Labs no responde por daños derivados del uso de la app, incluidos daños en la piel, pérdida de datos o perjuicios económicos. Nada en estos términos limita los derechos que te reconoce la legislación de consumo, que siguen siendo tuyos.</p>
+
+    <h2>11. Cambios y finalización</h2>
+    <p>Podemos actualizar estos términos. Si el cambio es relevante, te avisaremos en la app. Podemos también dejar de ofrecer la app o alguna de sus funciones, avisando con antelación razonable.</p>
+
+    <h2>12. Ley aplicable</h2>
+    <p>Estos términos se rigen por la legislación española. Si eres consumidor, puedes acudir a los tribunales de tu domicilio.</p>
+
+    <h2>13. Contacto</h2>
+    <p>Para cualquier duda sobre estos términos, escríbenos a <a href="mailto:pjclimatelabs@gmail.com">pjclimatelabs@gmail.com</a>.</p>
+    </section>
+
+    <section data-lang="en">
+    <h2>1. Who we are and what this is</h2>
+    <p>Rayly is an application developed by PJ Climate Labs. These Terms of Use govern the relationship between you and us when you use the app. By downloading or using Rayly, you accept these terms. If you do not agree with them, please do not use the application.</p>
+    <p>Contact: <a href="mailto:pjclimatelabs@gmail.com">pjclimatelabs@gmail.com</a></p>
+
+    <h2>2. What Rayly is for</h2>
+    <p>Rayly calculates an indicative estimate of how long you can stay in the sun based on the UV index at your location, your skin type (phototype), the sunscreen you use, the environment you are in and whether you take photosensitising medication.</p>
+    <p>The app is intended for healthy adults who want to sunbathe more consciously.</p>
+
+    <h2>3. Important notice: Rayly is not a medical device</h2>
+    <p>This is the most important part of this document, so we will say it plainly:</p>
+    <ul>
+      <li>Rayly is <strong>not a medical device</strong> or healthcare product.</li>
+      <li>The times you see are <strong>estimates based on scientific models</strong>, not measurements of your skin.</li>
+      <li>Rayly <strong>does not diagnose, treat or prevent any disease</strong>, including skin cancer.</li>
+      <li>The app <strong>does not replace advice from a healthcare professional</strong>. If you have concerns about your skin, moles, sun allergies or medication, consult your doctor or dermatologist.</li>
+    </ul>
+    <p>Every skin is different and there are factors the app cannot know (your health, your history, how you apply sunscreen, how much you sweat or swim). <strong>Always use your own judgement and appropriate sun protection.</strong></p>
+
+    <h2>4. Your responsibility when using the app</h2>
+    <p>By using Rayly you understand and accept that:</p>
+    <ul>
+      <li>You are the one who decides how long to stay in the sun. The app only informs you.</li>
+      <li>You must enter your data (phototype, medication, protection) truthfully, as the calculation depends on it.</li>
+      <li>We are not liable for sunburn, skin reactions or other harm arising from your sun exposure.</li>
+      <li>If you have a medical condition, take photosensitising medication or have a history of skin cancer, you should consult a professional before relying on the app.</li>
+    </ul>
+    <p>Rayly is provided "as is". We do not guarantee that weather data is accurate or that the app will run without interruption.</p>
+
+    <h2>5. Minors</h2>
+    <p>Rayly is intended for people aged 18 and over. Children's skin is more sensitive and requires different criteria from those the app applies.</p>
+
+    <h2>6. Rayly Plus (subscription)</h2>
+    <p>Rayly can be used for free. In addition, we offer an optional subscription called <strong>Rayly Plus</strong> that unlocks additional features.</p>
+    <ul>
+      <li><strong>Price:</strong> as shown in the app itself before purchase, in your local currency.</li>
+      <li><strong>Free trial:</strong> if offered, its length is stated before you subscribe. If you do not cancel before it ends, the subscription is charged automatically.</li>
+      <li><strong>Automatic renewal:</strong> the subscription renews itself at the end of each period unless you cancel at least 24 hours beforehand.</li>
+      <li><strong>How to cancel:</strong> from your Google Play or App Store account settings, not from the app. You can cancel at any time and will keep Plus until the paid period ends.</li>
+      <li><strong>Payments and refunds:</strong> handled by the store (Google or Apple), not by us. Refunds are governed by their policies.</li>
+    </ul>
+
+    <h2>7. Intellectual property</h2>
+    <p>The app, its name, logo, designs and texts are the property of PJ Climate Labs. You may use the app, but not copy, redistribute, decompile it or create derivative products without permission.</p>
+    <p>The cards you generate for sharing are yours: you may post them freely on your social networks.</p>
+
+    <h2>8. Third-party data</h2>
+    <p>Rayly uses UV radiation and weather data from Open-Meteo, and location services from OpenStreetMap and Photon (Komoot). We do not control those services nor are we responsible for the accuracy of their data.</p>
+
+    <h2>9. Privacy</h2>
+    <p>Your data is stored on your device, not on our servers. Details are in our <a href="./?lang=en">Privacy Policy</a>, which forms part of these terms.</p>
+
+    <h2>10. Limitation of liability</h2>
+    <p>To the extent permitted by law, PJ Climate Labs is not liable for damages arising from use of the app, including skin damage, data loss or financial loss. Nothing in these terms limits the rights granted to you by consumer legislation, which remain yours.</p>
+
+    <h2>11. Changes and termination</h2>
+    <p>We may update these terms. If a change is significant, we will notify you in the app. We may also stop offering the app or some of its features, with reasonable notice.</p>
+
+    <h2>12. Governing law</h2>
+    <p>These terms are governed by Spanish law. If you are a consumer, you may bring proceedings in the courts of your domicile.</p>
+
+    <h2>13. Contact</h2>
+    <p>For any questions about these terms, write to us at <a href="mailto:pjclimatelabs@gmail.com">pjclimatelabs@gmail.com</a>.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    <span data-lang="es">Rayly · PJ Climate Labs · <a href="./">Política de privacidad</a></span>
+    <span data-lang="en">Rayly · PJ Climate Labs · <a href="./">Privacy policy</a></span>
+  </footer>
+</div>
+<script>
+  function setLang(l){
+    document.body.className = l;
+    document.documentElement.lang = l;
+    document.getElementById('btn-es').classList.toggle('on', l==='es');
+    document.getElementById('btn-en').classList.toggle('on', l==='en');
+    try{ history.replaceState(null,'', l==='en' ? '?lang=en' : location.pathname); }catch(e){}
+  }
+  // Idioma inicial: ?lang=en, o el del navegador
+  (function(){
+    var q = new URLSearchParams(location.search).get('lang');
+    var nav = (navigator.language||'es').slice(0,2);
+    setLang(q==='en' || (!q && nav==='en') ? 'en' : 'es');
+  })();
+</script>
+</body>
+</html>
